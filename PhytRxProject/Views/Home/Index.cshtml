@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@if (ViewBag.displayMenu == "Yes")
+{
+    <h1>Welcome Admin. Now you can create user Role.</h1>
+
+    <li>@Html.ActionLink("Manage Role", "Index", "Role")</li>
+
+}
+else
+{
+    <h2>  Welcome <strong>@ViewBag.Name</strong> :) .We will add user module soon </h2>
+}
+
+
+    <body id="home-body">
+        <h1 id="home-h1">Welcome to Phyt-RX!</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="heading1">Patient Log-In</h3>
+                <div>
+
+                    <a @Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" }) data-toggle="tooltip" data-placement="top" title="Patients Log In Here!" class="btn btn-sm animated-button thar-three" id="patient-home-button">Log In</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3 class="heading1">DPT Log-In</h3>
+
+                <div>
+                    <a @Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" }) data-toggle="tooltip" data-placement="top" title="Patients Log In Here!" class="btn btn-sm animated-button thar-three" id="patient-home-button">Log In</a>
+                </div>
+            </div>
+        </div>
+    </body>

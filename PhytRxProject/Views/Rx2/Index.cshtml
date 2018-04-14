@@ -1,0 +1,118 @@
+﻿@model IEnumerable<PhytRxProject.Models.Rx2>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+@*<form method="get">
+        <label for="search">Enter Patient</label>
+        <input type="text" name="search" id="search" />
+        <button type="submit">Let's go</button>
+    </form>*@
+
+
+
+@*<div id="patientform" style="display:flex;">
+
+        <label >Search Patients</label>
+        <input id="patientSelection" type="text" />
+        <button onclick="showPatients(); SwapDivsWithClick('patientform', 'RXindex');" type="submit">
+            Perform search
+        </button>
+    @*<p style="d"></p>*@
+
+@*</div>
+
+
+
+<input type="hidden" value="@ViewBag.PID" />
+<div id="RXindex" style="display:none;">
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RxName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LogID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsersName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Patient.PID)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            if (ViewBag.PID == item.Patient.PID)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RxName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ExID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PhID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LogID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UsersName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Patient.PID)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.RXID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.RXID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.RXID })
+                    </td>
+                </tr>
+            }
+        }
+
+    </table>
+</div>
+
+<script>
+
+    function showPatients() {
+        var Doc = document.getElementById("patientSelection").innerHTML;
+
+        console.log("test");
+    }
+    function SwapDivsWithClick(div1, div2) {
+        d1 = document.getElementById(div1);
+        d2 = document.getElementById(div2);
+        if (d2.style.display == "none") {
+            d1.style.display = "none";
+            d2.style.display = "flex"
+        }
+        else {
+            d1.style.display = "flex";
+            d2.style.display = "none";
+        }
+    }
+
+
+
+</script>

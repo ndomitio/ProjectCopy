@@ -1,0 +1,87 @@
+﻿@model IEnumerable<PhytRxProject.Models.Log>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PainNumb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiffNumb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComTxt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsComplete)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FullSet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PartialSet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Exercis.ExName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rx2.RxName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PainNumb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiffNumb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComTxt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsComplete)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FullSet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PartialSet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Exercis.ExName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rx2.RxName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LogID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LogID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LogID })
+        </td>
+    </tr>
+}
+
+</table>

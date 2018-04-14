@@ -1,0 +1,306 @@
+﻿body {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  
+}
+
+
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*navbar*/
+.navbar-brand {
+    font-family: 'Merriweather', 'Times New Roman', serif;
+    font-size: 32px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-inverse {
+    background-color: #00303F;
+    background-image: url('images/black-linen.png');
+}
+
+    .navbar-inverse .navbar-brand {
+        color: #DCAE1D;
+    }
+
+    .navbar-inverse .navbar-nav li a {
+        color: #7A9D96;
+    }
+
+.lineBelowNavbar {
+    background-color: #7A9D96;
+    background-image: url('images/black-linen.png');
+    height: 5px;
+}
+/*for body*/
+.backgroundSky {
+    background-color: #ffefff;
+    background-image: url('images/noisy-grid.png');
+}
+
+/*Use for Patient view headers/navbars and for DPT view footers*/
+.backgroundHoney {
+    background-color: #DCAE1D;
+    background-image: url('images/wavecut.png');
+}
+
+/*Use for Patient view footers, for DPT headers/navbars, and any table header rows*/
+.backgroundDark {
+    background-color: #00303F;
+    color: #ffffff;
+    background-image: url('images/black-linen.png');
+}
+
+/*Use for between header/navbar and body*/
+.backgroundMist {
+    background-color: #7A9D96;
+    background-image: url('images/wavecut.png');
+    height: 5px;
+}
+
+/*Use for between body and footer AND for any table bodies*/
+.backgroundMist2 {
+    background-color: #7A9D96;
+    background-image: url('images/black-linen.png');
+    height: 5px;
+}
+
+
+/*Use for H3 tags*/
+.heading1 {
+    font-family: 'Merriweather', 'Times New Roman', Times, serif;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 32px;
+}
+
+/*Use for H5 tags*/
+.heading2 {
+    font-family: 'Lato', Arial, sans-serif;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 22px;
+}
+
+/*Use for P tags*/
+.pTag1 {
+    font-family: 'Lato', Arial, sans-serif;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+
+/*tables*/
+.subrowHeader {
+    background-color: #00303F;
+    color: #ffffff;
+    background-image: url('images/black-linen.png');
+}
+
+.subrow {
+    background-color: #7A9D96;
+    background-image: url('images/black-linen.png');
+    color: #ffffff;
+}
+
+td {
+    color: #ffffff;
+}
+
+    td a {
+        color: #ffffff;
+    }
+
+#hrBar {
+    border-top-color: #ffffff;
+}
+
+/*footer*/
+.lineAboveFooter {
+    background-color: #7A9D96;
+    background-image: url('images/wavecut.png');
+    height: 5px;
+}
+
+.footer-content {
+    height: 50px;
+    background-color: #DCAE1D;
+    background-image: url('images/wavecut.png');
+}
+
+    .footer-content p {
+        color: #00303F;
+        text-align: center;
+    }
+
+/*buttons*/
+a.animated-button:link, a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    border-radius: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+    a.animated-button:link:after, a.animated-button:visited:after {
+        content: "";
+        position: absolute;
+        height: 0%;
+        left: 50%;
+        top: 50%;
+        width: 150%;
+        z-index: -1;
+        -webkit-transition: all 0.75s ease 0s;
+        -moz-transition: all 0.75s ease 0s;
+        -o-transition: all 0.75s ease 0s;
+        transition: all 0.75s ease 0s;
+    }
+
+    a.animated-button:link:hover, a.animated-button:visited:hover {
+        color: #FFF;
+        text-shadow: none;
+    }
+
+        a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+            height: 450%;
+        }
+
+a.animated-button:link, a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+a.animated-button.thar-three {
+    color: #00303F;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 2px solid #00303F;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1)0s;
+}
+
+a#patient-home-button.btn.btn-sm.animated-button.thar-three {
+    color: #DCAE1D;
+    border: 2px solid #DCAE1D;
+}
+
+a.animated-button.thar-three:hover {
+    color: #000 !important;
+    background-color: transparent;
+}
+
+    a.animated-button.thar-three:hover:before {
+        left: 0%;
+        right: auto;
+        width: 100%;
+    }
+
+a#patient-home-button.animated-button.thar-three:before {
+    background: #DCAE1D;
+}
+
+a.animated-button.thar-three:before {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: #00303F;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+}
+
+/*Tool Tip Css */
+#tooltip {
+    text-align: center;
+    color: #fff;
+    background: #111;
+    position: absolute;
+    z-index: 100;
+    padding: 15px;
+}
+
+    #tooltip:after /* triangle decoration */ {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #111;
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        margin-left: -10px;
+    }
+
+    #tooltip.top:after {
+        border-top-color: transparent;
+        border-bottom: 10px solid #111;
+        top: -20px;
+        bottom: auto;
+    }
+
+    #tooltip.left:after {
+        left: 10px;
+        margin: 0;
+    }
+
+    #tooltip.right:after {
+        right: 10px;
+        left: auto;
+        margin: 0;
+    }

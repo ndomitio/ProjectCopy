@@ -1,0 +1,32 @@
+﻿/*navbar*/
+
+.navbar-inverse {
+    background-color: #DCAE1D;
+    background-image: url('images/wavecut.png');
+}
+
+    .navbar-inverse .navbar-brand {
+        color: #00303F;
+    }
+
+    .navbar-inverse .navbar-nav li a {
+        color: #00303F;
+    }
+
+.lineBelowNavbar {
+    background-image: url('images/wavecut.png');
+}
+
+/*footer*/
+.lineAboveFooter {
+    background-image: url('images/black-linen.png');
+}
+
+.footer-content {
+    background-color: #00303F;
+    background-image: url('images/black-linen.png');
+}
+
+    .footer-content p {
+        color: #DCAE1D;
+    }

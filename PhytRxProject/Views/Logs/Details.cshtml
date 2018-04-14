@@ -1,0 +1,98 @@
+﻿@model PhytRxProject.Models.Log
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Log</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PainNumb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PainNumb)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiffNumb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiffNumb)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ComTxt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ComTxt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsComplete)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsComplete)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FullSet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FullSet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PartialSet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PartialSet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Exercis.ExName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Exercis.ExName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rx2.RxName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rx2.RxName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LogID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
